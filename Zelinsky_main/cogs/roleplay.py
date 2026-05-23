@@ -59,7 +59,7 @@ class Roleplay(commands.Cog):
         if member is None:
             await ctx.send(f"kink you cant bonk yourself {ctx.author.mention}")
         elif member is ctx.author:
-            await ctx.send(f"yeah bonk yourself nigga you deserve {ctx.author.mention}")
+            await ctx.send(f"yeah bonk yourself boi you deserve {ctx.author.mention}")
         else:
             gifs = [
 
@@ -71,7 +71,7 @@ class Roleplay(commands.Cog):
         if member is None:
             await ctx.send(f"who you need to slap boi")
         elif member is ctx.author:
-            await ctx.send(f"yeah nigga slap {ctx.author.mention} yourself")
+            await ctx.send(f"yeah mate slap {ctx.author.mention} yourself")
         else:
             gifs = [ # add your gifs here
 
@@ -83,12 +83,12 @@ class Roleplay(commands.Cog):
         if member is None:
             await ctx.send(f"yeah boi end someone's generation")
         elif member is ctx.author:
-            await ctx.send(f"nigga you gonna smash yo nuts {ctx.author.mention}")
+            await ctx.send(f"buddy you gonna smash yo nuts {ctx.author.mention}")
         else:
             gifs = [ # add gifs here
 
             ]
-            await ctx.send(f"{ctx.author.mention}  nutkicked {member.mention} \n{ctx.author.mention}")
+            await ctx.send(f"{ctx.author.mention}  nutkicked {member.mention} \n{random.choice(gifs}")
     @commands.command()
     async def spank(self,ctx,member:discord.Member=None):
         if member is None:
@@ -99,9 +99,9 @@ class Roleplay(commands.Cog):
             gifs = [
 
             ]
-            await ctx.send(f"{ctx.author.mention} spanks {member.mention} lovely..UWU >_<" , {random.choice(gifs)})
+            await ctx.send(f"{ctx.author.mention} spanks {member.mention} lovely..UWU >_<" , {random.choice(gifs)}")
     
-# Setup
+# Setup this is the main task
 async def setup(bot):
     await bot.add_cog(Roleplay(bot))
 
