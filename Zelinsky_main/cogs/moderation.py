@@ -29,7 +29,7 @@ class moderation(commands.Cog):
             await ctx.send(" I can't ban this user.")
             print(e)
     #mute
-    @commands.command
+    @commands.command()
     @commands.has_permissions(mute_members=True)
     async def timeout(self,ctx,member=discord.Member,minutes=int, reason=None ):
         us = ctx.author.mention
